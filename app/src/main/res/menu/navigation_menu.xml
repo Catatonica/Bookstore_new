@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="@string/account" />
+        <item
+            android:id="@+id/nav_catalogue"
+            android:checked="true"
+            android:icon="@drawable/ic_view_module_black_24dp"
+            android:title="@string/catalogue" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_place_black_24dp"
+            android:title="@string/shops_map" />
+    </group>
+</menu>

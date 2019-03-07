@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="192dp"
+    android:background="@color/color9"
+    android:padding="16dp"
+    android:id="@+id/llHeader"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:orientation="vertical"
+    android:gravity="bottom">
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/bookstore"-->
+        <!--android:textSize="18sp"-->
+        <!--android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>-->
+
+    <ImageButton
+        android:visibility="visible"
+        android:background="@drawable/ic_person_add_black_24dp"
+        android:id="@+id/ibAddNewUser"
+        android:layout_width="55dp"
+        android:layout_height="55dp" />
+
+    <ImageView
+        android:visibility="gone"
+        android:background="@drawable/ic_account_circle_black_24dp"
+        android:id="@+id/ivUserPhoto"
+        android:layout_width="75dp"
+        android:layout_height="75dp" />
+
+    <RelativeLayout
+        android:id="@+id/rlUserEmailAndExit"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvUserEmail"
+            android:textSize="16sp"
+            android:textColor="@color/biruz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/ibSignOut"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_exit_to_app_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

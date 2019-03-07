@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llBasket"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="izenka.hfad.com.bookstore.basket.BasketActivity">
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="47dp"-->
+    <!--android:background="@color/color9">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/btnGoBackFromBasket"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_gravity="left|center"-->
+    <!--android:padding="10dp"-->
+    <!--android:src="@drawable/return_back"-->
+    <!--android:tint="@color/white" />-->
+
+    <!--<View-->
+    <!--android:layout_width="1dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_toRightOf="@+id/btnGoBack"-->
+    <!--android:background="#90909090" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:text="@string/basket"-->
+    <!--android:textColor="@color/yellow"-->
+    <!--android:textSize="20sp" />-->
+
+    <!--</RelativeLayout>-->
+
+    <!--Button
+        android:id="@+id/btnChooseEvrth"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chooseEth"
+        android:layout_margin="7dp"
+        android:backgroundTint="@color/color11"
+        android:onClick="onChooseEvrthClick"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Widget.Button"/!-->
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btnChooseEth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        fancy:fb_borderColor="@color/darkBrown"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="@color/bezch2"
+        fancy:fb_radius="15dp"
+        fancy:fb_text="@string/checkAll"
+        fancy:fb_textColor="@color/color9" />
+
+    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rvBookList"
+        android:background="@drawable/boarders6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/llPrise"
+        android:layout_below="@id/btnChooseEth"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp"></android.support.v7.widget.RecyclerView>
+    <!--<ScrollView-->
+    <!--android:layout_below="@id/btnChooseEth"-->
+    <!--android:layout_above="@id/llPrise"-->
+    <!--android:id="@+id/scrollView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_margin="7dp">-->
+
+    <!--&lt;!&ndash;ListView-->
+    <!--android:layout_gravity="center"-->
+    <!--android:id="@+id/lvOrders"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--</ListView!&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:id="@+id/llBooks"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="top"-->
+    <!--android:orientation="vertical">-->
+
+    <!--</LinearLayout>-->
+
+    <!--</ScrollView>-->
+
+    <LinearLayout
+        android:id="@+id/llPrise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnRegister"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Общая цена: "
+            android:textColor="@color/color9"
+            android:textSize="17sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/tvTotalPriceForAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0.0"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/green"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=" р."
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/green"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:layout_margin="10dp"
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        fancy:fb_borderColor="@color/darkBrown"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="@color/biruz"
+        fancy:fb_radius="15dp"
+        fancy:fb_text="@string/toRegistration"
+        fancy:fb_textColor="@color/color9" />
+
+</RelativeLayout>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:background="@drawable/boarders"
+    android:padding="5dp"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_weight="5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:elevation="5dp"
+                android:layout_gravity="center"
+                android:id="@+id/ivBookImage"
+                android:layout_width="120dp"
+                android:layout_height="170dp"
+                android:layout_margin="10dp" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/darkBrown"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/tvAuthor"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/color9"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tvYear"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/color9"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_margin="10dp"
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/myrect"
+                android:elevation="10dp"
+                android:maxLines="3"
+                android:padding="7dp"
+                android:text=""
+                android:textColor="@color/color9"
+                android:textSize="17sp" />
+
+            <ImageButton
+                android:id="@+id/ibExpand"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="17dp"
+                android:background="@drawable/expand"
+                android:backgroundTint="@color/color11"
+                android:onClick="onExpandClick" />
+
+        </LinearLayout>
+    </ScrollView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/yellow4"
+                android:elevation="50dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvPrise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=""
+                    android:textAppearance="@android:style/TextAppearance.Material.Widget.TextView"
+                    android:textColor="@color/green"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvAvailability"
+                    android:layout_below="@id/tvPrise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textAppearance="@android:style/TextAppearance.Material.Widget.TextView"
+                    android:textColor="@color/color9" />
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:layout_below="@id/tvAvailability"
+                    android:id="@+id/putInBasket"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:elevation="10dp"
+                    android:onClick="onPutInBasketClick"
+                    fancy:fb_borderColor="@color/darkBrown"
+                    fancy:fb_borderWidth="1dp"
+                    fancy:fb_defaultColor="@color/yellow"
+                    fancy:fb_radius="5dp"
+                    fancy:fb_text="@string/putInBasket"
+                    fancy:fb_textColor="@color/color9"
+                    fancy:fb_textGravity="center" />
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                    android:visibility="gone"
+                    android:id="@+id/btnNotify"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/tvAvailability"
+                    android:elevation="10dp"
+                    android:layout_alignParentBottom="true"
+                    fancy:fb_borderColor="@color/darkBrown"
+                    fancy:fb_borderWidth="1dp"
+                    fancy:fb_defaultColor="@color/biruz"
+                    fancy:fb_radius="5dp"
+                    fancy:fb_text="Уведомить о появлении"
+                    fancy:fb_textColor="@color/color9"
+                    fancy:fb_textGravity="center" />
+            </RelativeLayout>
+
+            <ScrollView
+                android:padding="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:text="@string/title_book_parameters"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <!--<mehdi.sakout.fancybuttons.FancyButton-->
+                        <!--android:id="@+id/btnParameters"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_margin="7dp"-->
+                        <!--android:onClick="onParametersClick"-->
+                        <!--fancy:fb_borderColor="@color/darkBrown"-->
+                        <!--fancy:fb_borderWidth="1dp"-->
+                        <!--fancy:fb_defaultColor="@color/bezch2"-->
+                        <!--fancy:fb_radius="5dp"-->
+                        <!--fancy:fb_text="@string/bookParameters"-->
+                        <!--fancy:fb_textColor="@color/color9" />-->
+                    <!--Button
+                        android:id="@+id/btnParameters"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        android:backgroundTint="@color/color11"
+                        android:onClick="onParametersClick"
+                        android:text="@string/bookParameters"
+                        android:textAlignment="center"
+                        android:textAppearance="@android:style/TextAppearance.Material.Widget.Button" /!-->
+
+                    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/glParameters"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:columnCount="2"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:rowCount="5">
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:layout_margin="3dp"
+                            android:text="@string/publisher"
+                            android:textAlignment="inherit" />
+
+                        <TextView
+                            android:id="@+id/tvPublisher"
+                            android:layout_columnWeight="5"
+                            android:layout_margin="3dp" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:layout_margin="3dp"
+                            android:text="@string/countInWarehouse" />
+
+                        <TextView
+                            android:id="@+id/tvCount"
+                            android:layout_columnWeight="5"
+                            android:layout_margin="3dp" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:layout_margin="3dp"
+                            android:text="@string/pagesNumber" />
+
+                        <TextView
+                            android:id="@+id/tvPages"
+                            android:layout_columnWeight="5"
+                            android:layout_margin="3dp" />
+
+                        <TextView
+                            android:layout_columnWeight="1"
+                            android:layout_margin="3dp"
+                            android:text="@string/coverType" />
+
+                        <TextView
+                            android:id="@+id/tvCover"
+                            android:layout_columnWeight="5"
+                            android:layout_margin="3dp" />
+                    </GridLayout>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <!--Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/yellow"
+            android:onClick="onPutInBasketClick"
+            android:text="@string/putInBasket"
+            android:textAppearance="@android:style/TextAppearance.Material.Widget.Button" /!-->
+    <!--</LinearLayout>-->
+
+    <!--TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:text="@string/reviews"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Widget.Button" /!-->
+</LinearLayout>

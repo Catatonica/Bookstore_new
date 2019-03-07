@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bezch3"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="47dp"-->
+    <!--android:background="@color/color9">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/btnGoBack"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_gravity="left|center"-->
+    <!--android:padding="10dp"-->
+    <!--android:src="@drawable/return_back"-->
+    <!--android:tint="@color/white" />-->
+
+    <!--<View-->
+    <!--android:layout_width="1dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_toRightOf="@+id/btnGoBack"-->
+    <!--android:background="#90909090" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:text="@string/orders"-->
+    <!--android:textColor="@color/biruz"-->
+    <!--android:textSize="20sp" />-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginRight="10dp">-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/llOrders"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="15dp"-->
+    <!--android:orientation="vertical"-->
+    <!--android:paddingBottom="15dp"></LinearLayout>-->
+    <!--</ScrollView>-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/pbLoadingProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/flBase"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></FrameLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bezch3"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/necessaryToFill"
+        android:textSize="17sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="75dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/boarders6"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1">
+
+                <TableRow>
+
+                    <TextView android:text="Email: " />
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_span="6"
+                        android:hint="*"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingStart="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView android:text="Телефон: " />
+
+                    <EditText
+                        android:id="@+id/etPhoneNumber"
+
+                        android:layout_span="6"
+                        android:hint="*"
+                        android:inputType="phone"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingStart="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView android:text="Имя: " />
+
+                    <EditText
+                        android:id="@+id/etName"
+                        android:layout_span="6"
+                        android:hint="*"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingStart="15dp" />
+                </TableRow>
+
+                <!--<TableRow>-->
+
+                <!--<TextView android:text="Дата рождения: " />-->
+                <!--<DatePicker> </DatePicker>-->
+                <!--</TableRow>-->
+                <TableRow>
+
+                    <TextView android:text="Адрес: " />
+
+                    <EditText
+                        android:layout_span="5"
+                        android:id="@+id/etAddress"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingStart="15dp" />
+
+                    <Button
+                        android:layout_span="1"
+                        android:id="@+id/btnAddLocation"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/ic_add_location_black_24dp"
+                        android:paddingTop="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView android:text="Город: " />
+
+                    <EditText
+                        android:layout_span="6"
+                        android:id="@+id/etCity"
+                        android:hint="*"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingStart="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView android:text="Улица: " />
+
+                    <EditText
+                        android:layout_span="6"
+                        android:id="@+id/etStreet"
+                        android:hint="*"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingStart="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView android:text="Дом: " />
+
+                    <EditText
+                        android:id="@+id/etHouse"
+                        android:layout_span="6"
+                        android:hint="*"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingStart="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView android:text="Квартира: " />
+
+                    <EditText
+                        android:id="@+id/etFlatNumber"
+                        android:layout_span="6"
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:paddingStart="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView android:text="Подъезд: " />
+
+                    <EditText
+                        android:id="@+id/etPorchNumber"
+                        android:layout_span="6"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:paddingStart="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView android:text="Этаж:" />
+
+                    <EditText
+                        android:id="@+id/etFloor"
+                        android:layout_span="6"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:paddingStart="15dp" />
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+
+        <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="70dp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:layout_marginTop="10dp">-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:background="@color/white1"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/etEmail"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:hint="@string/user_email"-->
+        <!--android:inputType="textEmailAddress"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:singleLine="true" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/etPhoneNumber"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:hint="@string/phoneNumber"-->
+        <!--android:inputType="phone"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:singleLine="true" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/etName"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:hint="@string/name"-->
+        <!--android:inputType="text"-->
+        <!--android:maxLines="1"-->
+        <!--android:paddingLeft="10dp" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/etCity"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:hint="@string/city"-->
+        <!--android:inputType="text"-->
+        <!--android:maxLines="1"-->
+        <!--android:paddingLeft="10dp" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/etStreet"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:hint="@string/street"-->
+        <!--android:inputType="text"-->
+        <!--android:maxLines="1"-->
+        <!--android:paddingLeft="10dp" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/etHouse"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:hint="@string/house"-->
+        <!--android:inputType="date"-->
+        <!--android:paddingLeft="10dp" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/etFlatNumber"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:hint="@string/flat"-->
+        <!--android:inputType="number"-->
+        <!--android:paddingLeft="10dp" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/etPorchNumber"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:hint="@string/porch"-->
+        <!--android:inputType="number"-->
+        <!--android:paddingLeft="10dp" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/etFloor"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:hint="@string/floor"-->
+        <!--android:inputType="number"-->
+        <!--android:paddingLeft="10dp" />-->
+
+        <!--</LinearLayout>-->
+        <!--</ScrollView>-->
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:text="@string/endRegistration"
+            fancy:fb_borderColor="@color/darkBrown"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="@color/biruz"
+            fancy:fb_radius="30dp"
+            fancy:fb_text="@string/endRegistration"
+            fancy:fb_textColor="@color/color9"
+            fancy:fb_textSize="20sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
